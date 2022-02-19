@@ -55,4 +55,5 @@ Instructions to run
 -   Navigate to ./Public/Public/ then type in "node ./server.js" into terminal.
 
 
+Note: Recovery email portion does not work for now.
 
