@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Browse People</title>
+        <link href="../main.css" rel="stylesheet"></link> 
+        <link href="./account.css" rel="stylesheet"></link>
+        <link href="./browse.css" rel="stylesheet"></link>
+        
+    </head>
+        <body>
+        <div id="body">    
+
+            <div id="col2" class="col2">
+                <h1 class = "headers" id="title" style="margin-bottom: 0.25in;">Browse People</h1>
+                
+                <div id="elemInfo" style="margin-right: 1in;">
+                    <img id="infoPic" class="col2L" src="./stockPersonImage.jpg" alt="Movie Picture">
+                    <div id="info">
+                        
+                        <p>Name:</p>
+                        <!--
+                        <p>Age:</p>
+                        <p>Genres:</p>
+                        <p>Movies:</p>
+                        <p>Rating:</p>
+                        -->
+                    </div>
+
+                </div>
+
+                <div id="elemInputPerson" style="visibility:hidden" style="margin-left: 1in;">
+                    <div id="elemTextBoxPerson">
+                        <h2>Following Status:
+                            <span id="followStatus" style="color:red;"></span><br>
+                            <div id="followOptions">
+                                <input id="addPersonButton" class="accountButton" type="button" name="accountButton" value="Add Person">
+                                
+                            </div>
+                        </h2>
+                    </div>
+                </div>
+
+
+
+            <!--
+                <div id="elemInput">
+                    <div id="elemTextBox">
+                        <input id="txtRating" class="input1" type="text" placeholder="Write Review">
+                        <h2>Rating:
+                            <select>
+                                <option>1 (Bad)</option>
+                                <option>2 (Meh)</option>
+                                <option>3 (Okay)</option>
+                                <option>4 (Good)</option>
+                                <option>5 (Great)</option>
+                            </select>
+            
+                            <input id="enterButton" class="input1" type="button" name="enterButton" value="Enter">
+                        </h2>
+                        
+                    </div>
+
+                </div>
+            -->
+                <div id="scrollList" style="margin-top: 0.575in;">
+                    
+                    <h1></h1>
+                    <nav>
+                        <ol id="peopleList">
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                        </ol>
+
+                    </nav>
+                </div>
+                <div id="filterListMovie" class="filterList" style="float: left; width:50%;">
+                    <h1 id="filterListMovieHeader">Filters:</h1>
+                    <br>    <label>Name:</label>
+                    <br><input id="filterNameBox" class="inputFilter" type="text" placeholder="Enter Name">
+                    <br>
+                </div>
+                
+            </div>
+
+            <div class="col1" id="col1">
+                
+                <div id="col1in" class="col1in">
+                
+                <h1>Browse</h1>
+                <a href="movies.html"><h2 class = "navOptions" id=movieOption>Movies</h2></a>
+                <a href="people.html"><h2 class = "navOptions" id="personOption">People</h2></a>
+                <a href="accounts.html"><h2 class = "navOptions" id="accountOption">Accounts</h2></a>
+                <h1 >User</h1>
+                <div>
+                    <a href="../main.html"><h2 class = "navOptions" id="userOption1">Main Page</h2></a>
+                    <a href="account.html"><h2 class = "navOptions" id="userOption5">My Account</h2></a>
+                    <a href="login.html"><h2 class = "navOptions" id="userOption4">Login</h2></a>
+                    <a href="login.html#noAccountMessage"><h2 class = "navOptions" id="userOption3">Create Account</h2></a>
+                    <a href="login.html#recoverMessage"><h2 class = "navOptions" id="userOption2">Forgot Password?<h2></a>
+                </div>
+                <div></div>
+                <!--
+                <h1 >Filter By</h1>
+                <input type="button" class = "navButton" id="accountButton" name="My Account" value="Title"><br>
+                <input type="button" class = "navButton" id="accountButton" name="My Movies" value="Rating"><br>
+                <input type="button" class = "navButton" id="accountButton" name="My People" value="Popularity"><br>
+                <input type="button" class = "navButton" id="accountButton" name="My Friends" value="Year"><br>
+                -->
+                </div>
+
+
+
+            <footer id ="copyrightText" style="color:black">
+                <br>&copy; Alex Iwoh 2020
+            </footer>  
+            </div>
+
+            <div id="accountInfo">
+
+
+            </div>
+
+            <!-- <div id="top">
+                <header id="header">
+                    <div id="headerL">
+                    <h1 class = "headers" id="title">Movie Database</h1>
+                    </div>
+                    <div id="headerInner">
+                    <input id="txtBox1" class="input1" type="text" placeholder="Enter Movie, Person, Account Name, ...">
+                    <input id="searchButton" class="input1" type="button" name="searchButton" value="Search">
+                    </div>
+                </header>
+            </div> -->
+        </div>
+        </body>
+        <script src="../main.js"></script>
+        <script src="../forms.js"></script>
+</html> 

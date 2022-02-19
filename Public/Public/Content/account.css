@@ -1,0 +1,23 @@
+.navButton   {
+    background-color: black;
+    border-color: white;
+    border-radius: 0.2in;
+    color: white;
+    width: 130px;
+    height: 30px;
+    font-size: 100%;
+    margin-left: 0.25in;
+    
+}
+
+.navButton:hover {
+    color: rgb(78, 78, 255);
+    border-color: rgb(78, 78, 255);
+}
+
+.navOptions     {
+    font-size: larger;
+    text-align: left;
+    margin-left: 0.25in;
+    
+}

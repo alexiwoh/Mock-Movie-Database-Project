@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Movies Page</title>
+        <link href="../main.css" rel="stylesheet"></link>
+        <link href="./account.css" rel="stylesheet"></link>
+        <link href="./browse.css" rel="stylesheet"></link>
+        
+    </head>
+        <body>
+        <div id="body">     
+
+            
+
+            <div id="col2" class="col2">
+                <h1 class = "headers" id="title" style="margin-bottom: 0.25in;">Browse Movies</h1>
+                
+                <div id="elemInfo">
+                    <img id="infoPic" class="col2L" src="./stockMovieImage.jpg" alt="Movie Picture">
+                    
+                    <div id="info">
+                        <p>Name:</p>
+                        <p>Genre:</p>
+                        <p>Year:</p>
+                        <p>Directors:</p>
+                        <p>Cast:</p>
+                        <p>Rating:</p>
+                    </div>
+
+                </div>
+
+                <div id="elemInput" style="visibility:hidden">
+                    <div id="elemTextBox">
+                        <input id="txtReview" style="width: 250px;" class="input1" type="text" placeholder="Write Review"><br><br>
+                        <p style="font-size: large;">Review Score:</p>
+                        <input id="txtRating" style="width: 250px;" class="input1" type="text" placeholder="0"><span style="margin-left: 0.1in;font-size: x-large;">/100</span></input><br><br>
+                            <input id="addReviewButton" class="input1" type="button" name="enterButton" value="Add Review" >
+                        </h2>
+                        
+                    </div>
+
+                </div>
+
+                <div id="scrollList">
+                    <div style="float:left">
+                        <h1 id="scrollListMovieHeader">Movie List:</h1>
+                        <nav>
+                            <ol id= movieList>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <li>Item</li>
+                            </ol>
+
+                        </nav>
+                    </div>
+                </div>
+                    <div id="filterListMovie" class="filterList" style="float: left; width:50%;">
+                        <h1 id="filterListMovieHeader">Filters:</h1>
+                        <br>    <label>Title:</label>
+                        <br><input id="filterTitleBox" class="inputFilter" type="text" placeholder="Enter Title">
+                        <br>    <label>Genre:</label>
+                        <br><input id="filterGenreBox" class="inputFilter" type="text" placeholder="Enter Genre">
+                        <br>    <label>Year:</label>
+                        <br><input id="filterYearBox" class="inputFilter" type="text" placeholder="Enter Year">
+                        <br>    <label>Rating:</label>
+                        <br><input id="filterRatingBox" class="inputFilter" type="text" placeholder="Enter Min Rating">
+                        <br>
+                    </div>
+                
+
+                
+            </div>
+
+            <div class="col1" id="col1">
+                <div id="col1in" class="col1in">
+                <h1>Browse</h1>
+                <a href="movies.html"><h2 class = "navOptions" id=movieOption>Movies</h2></a>
+                
+                <a href="people.html"><h2 class = "navOptions" id="personOption">People</h2></a>
+                
+                <a href="accounts.html"><h2 class = "navOptions" id="accountOption">Accounts</h2></a>
+                <h1 >User</h1>
+                    <div>
+                        <a href="../main.html"><h2 class = "navOptions" id="userOption1">Main Page</h2></a>
+                        <a href="account.html"><h2 class = "navOptions" id="userOption5">My Account</h2></a>
+                        <a href="login.html"><h2 class = "navOptions" id="userOption4">Login</h2></a>
+                        <a href="login.html#noAccountMessage"><h2 class = "navOptions" id="userOption3">Create Account</h2></a>
+                        <a href="login.html#recoverMessage"><h2 class = "navOptions" id="userOption2">Forgot Password?<h2></a>
+                    </div>
+                </div>
+                <footer id ="copyrightText" style="color:black">
+                    <br>&copy; Alex Iwoh 2020
+                </footer>  
+            </div>
+
+            
+
+            <!-- <div id="top">
+                <header id="header">
+                    <div id="headerL">
+                    <h1 class = "headers" id="title">Movie Database</h1>
+                    </div>
+                    <div id="headerInner">
+                    <input id="txtBox1" class="input1" type="text" placeholder="Enter Movie, Person, Account Name, ...">
+                    <input id="searchButton" class="input1" type="button" name="searchButton" value="Search">
+                    </div>
+                </header>
+            </div> -->
+        </div>
+        </body>
+        <script src="../main.js"></script>
+        <script src="../forms.js"></script>
+</html> 

@@ -1,0 +1,76 @@
+doctype html
+html(lang='en')
+    head
+        title User Page for #{data.Name}
+        link(rel="stylesheet" href="/main.css")
+        link(rel="stylesheet" href="/Content/account.css")
+        link(rel="stylesheet" href="/Content/browse.css")
+    body
+      div(id="col2" class="col2")
+        h1(class="headers") #{data.Name}
+        div
+          p(style="color:black") #{data.ID}
+        #elemInfo
+          img#infoPic.col2L(src='/Content/stockPersonImage.jpg' alt='Movie Picture')
+          #info
+            h2 Name: 
+            p #{data.Name}
+
+            
+
+            h2 Following:
+            each m in data.friends
+              br
+              - let lin = `/users/${m}`
+              a(href=lin) #{"  "+accountsMap[m]}
+            else
+              p None
+            
+            h2 Followers:
+            each m in data.userFollowers
+              br
+              - let lin = `/users/${m}`
+              a(href=lin) #{"  "+accountsMap[m]}
+            else
+              p None
+
+            h2 People Following:
+            each m in data.peopleFollowing
+              if peopleMapID[m]
+                br
+                - let lin = `/people/${m}`
+                a(href=lin) #{"  "+peopleMapID[m]}
+              else
+                br
+                - let lin = `/people/${m}`
+                a(href=lin) #{"  "+peopleMapID[m]}
+
+            else
+              p None
+
+            h2 Reviews Written:
+            each m in data.movieReviews
+              br
+              - let rev = reviewsMap[m]
+              p= "--------------------------" 
+              p Movie Name: #{reviewsMap[m].Movie}
+              p User: #{accountsMap[reviewsMap[m].AccountID]}
+              p #{reviewsMap[m].review}
+              p Score: #{reviewsMap[m].rating}
+            else
+              p None
+              
+            //
+              h2 Notifications:
+              each m in data.notifications
+                br
+                p #{m}
+              else
+                p None
+
+            
+   
+
+      include displaySidebar
+    script(src="/main.js")
+    script(src="/forms.js")

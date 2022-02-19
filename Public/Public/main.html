@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <title>Movie Database</title>
+            <link href="./main.css" rel="stylesheet"></link>
+            <link href="Content/account.css" rel="stylesheet"></link>
+            <link href="Content/browse.css" rel="stylesheet"></link>
+            
+        </head>
+
+        
+
+        <body id="body">
+
+            <div id="col2" class="col2">
+
+                <br><h1 class = "headers" id="recommended">Recommended Movies</h1><br>
+                
+                <div id="elemInfo">
+                    <img id="infoPic" class="col2L" src=Content/stockMovieImage.jpg alt="Movie Picture">
+                    <div id="info">
+                        <p>Name:</p>
+                        <p>Genre:</p>
+                        <p>Year:</p>
+                        <p>Directors:</p>
+                        <p>Cast:</p>
+                        <p>Rating:</p>
+                    </div>
+
+                </div>
+
+                <div id="scrollList" style="margin-top: 2.6in;">
+                    <h1>Movie List:</h1>
+                    <nav>
+                        <ol id= movieList>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                        </ol>
+
+                    </nav>
+                </div>
+                <div id="filterListMovie" class="filterList" style="float: left; width:50%;">
+                    <h1 id="filterListMovieHeader">Filters:</h1>
+                    <br>    <label>Title:</label>
+                    <br><input id="filterTitleBox" class="inputFilter" type="text" placeholder="Enter Title">
+                    <br>    <label>Genre:</label>
+                    <br><input id="filterGenreBox" class="inputFilter" type="text" placeholder="Enter Genre">
+                    <br>    <label>Year:</label>
+                    <br><input id="filterYearBox" class="inputFilter" type="text" placeholder="Enter Year">
+                    <br>    <label>Rating:</label>
+                    <br><input id="filterRatingBox" class="inputFilter" type="text" placeholder="Enter Min Rating">
+                    <br>
+                </div>
+
+            </div>
+            
+            <div class="col1" id="col1">
+                
+                <div id=col1in>
+                
+                <h1>Browse</h1>
+                <a href="Content/movies.html"><h2 class = "navOptions" id=movieOption>Movies</h2></a>
+                
+                <a href="Content/people.html"><h2 class = "navOptions" id="personOption">People</h2></a>
+                
+                <a href="Content/accounts.html"><h2 class = "navOptions" id="accountOption">Accounts</h2></a>
+                
+                <h1 >User</h1>
+                <a href="Content/account.html"><h2 class = "navOptions" id="userOption5">My Account</h2></a>
+                <a href="Content/account.html"><h2 class = "navOptions" id="userOption">Login</h2></a>
+                <a href="Content/login.html#recoverMessage"><h2 class = "navOptions" id="userOption">Create Account</h2></a>
+                <a href="Content/login.html#noAccountMessage"><h2 class = "navOptions" id="userOption">Forgot Password?</h2></a>
+                
+                </div>
+
+            <footer id ="copyrightText" style="color:black">
+                <br>&copy; Alex Iwoh 2020
+            </footer>  
+            </div>
+
+            <!-- <div id="top">
+                <header id="header">
+                    <div id="headerL">
+                    <h1 class = "headers" id="title">Movie Database</h1>
+                    </div>
+                    <div id="headerInner">
+                    <input id="txtBox1" class="input1" type="text" placeholder="Enter Movie, Person, Account Name, ...">
+                    <input id="searchButton" class="input1" type="button" name="searchButton" value="Search">
+                    </div>
+                </header>
+            </div> -->
+
+            
+        </body>
+        <script src="main.js"></script>
+        <script src="forms.js"></script>
+        
+        
+</html>

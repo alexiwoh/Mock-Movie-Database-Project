@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login Page</title>
+        <link href="../main.css" rel="stylesheet"></link>
+        <link href="./login.css" rel="stylesheet"></link>
+        
+    </head>
+        <body>
+        <div id="body">    
+
+            
+
+            <div id="col2" class="col2">
+                <h1 class = "headers" id="title" style="margin-bottom: 0.25in;">Login to Account</h1>
+                <input id="txtboxUser1" class="login" type="text" placeholder="Enter Username"><br><br>
+                <input id="txtboxPassword1" class="login" type="text" placeholder="Enter Password"><br><br>
+                <input id="loginButton" class="accountButton" type="button" name="loginButton" value="Login">
+                <!--<a href="./account.html"><input id="loginButton" class="accountButton" type="button" name="loginButton" value="Login"></a>-->
+                <br><br>
+                <!-- action="http://localhost:3000/accountlist/createAccount" method = "POST" -->
+                <form id="createAccountForm"  >
+                    <br><h2 id="noAccountMessage" class="noAccountMessage">Don't have an account?...</h2>
+                    <h1 class = "headers" id="title" style="margin-bottom: 0.25in;">Create New Account</h1>
+                    <input id="txtboxName" class="login" type="text" name="username" placeholder="Enter Your Name"><br><br>
+                    <input id="txtboxUser" class="login" type="text" name="username" placeholder="Enter New Username"><br><br>
+                    <input id="txtboxPassword" class="login" type="text" name="password" placeholder="Enter New Password"><br><br>
+                    <input id="txtboxEmail" class="login" type="text" name="email" placeholder="Enter Your Email"><br><br>
+                    <input id="createButton" class="accountButton" type="button" value="Create"><br><br>
+                </form>
+
+                <br><h2 id="recoverMessage" class="noAccountMessage">Forgot your password?...</h2>
+                <h1 class = "headers" id="title" style="margin-bottom: 0.25in;">Recover Password</h1>
+                <input id="txtboxEmail2" class="login" type="text" placeholder="Enter Recovery Email"><br><br>
+                <input id="recoverButton" class="accountButton" type="button" name="recoverButton" value="Send Recovery Email"><br><br>
+            </div>
+
+            <div class="col1" id="col1">
+                
+                <div id="col1in" class="col1in">
+                
+                <h1>Browse</h1>
+                <a href="movies.html"><h2 class = "navOptions" id=movieOption>Movies</h2></a>
+                
+                <a href="people.html"><h2 class = "navOptions" id="personOption">People</h2></a>
+                
+                <a href="accounts.html"><h2 class = "navOptions" id="accountOption">Accounts</h2></a>
+                <h1 >User</h1>
+                <a href="../main.html"><h2 class = "navOptions" id="mainOption">Main Page</h2></a>
+                <h2 class = "filler" style="color: black;">..............</h2>
+                <h2 class = "filler" style="color: black;">Create Account</h2>
+                
+                </div>
+
+
+
+            <footer id ="copyrightText" style="color:black">
+                <br>&copy; Alex Iwoh 2020
+            </footer>  
+            </div>
+
+            <!-- <div id="top">
+                <header id="header">
+                    <div id="headerL">
+                    <h1 class = "headers" id="title">Movie Database</h1>
+                    </div>
+                    <div id="headerInner">
+                    <input id="txtBox1" class="input1" type="text" placeholder="Enter Movie, Person, Account Name, ...">
+                    <input id="searchButton" class="input1" type="button" name="searchButton" value="Search">
+                    </div>
+                </header>
+            </div> -->
+        </div>
+        </body>
+        <script src="../main.js"></script>
+        <script src="../forms.js"></script>
+</html> 

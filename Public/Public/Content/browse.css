@@ -1,0 +1,114 @@
+.col2L  {
+    float: left;
+    width: 35%;
+}
+
+#infoPic    {
+    margin-top: 5%;
+    width: 15%;
+}
+
+#info   {
+    float: left;
+    margin-left: 5%;
+    width:35%;
+}
+
+#elemInfo  {
+    width:65%;
+    
+}
+
+#elemInput  {
+    width:35%;
+    margin-left: 50%;
+    margin-top: 0.1in;
+}
+
+#txtReview  {
+    width: 200px;
+    height: 40px;
+    font-size: 100%;
+    border-color: white;
+    border-radius: 0.2in;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+#enterButton   {
+    background-color: black;
+    border-color: white;
+    color: white;
+    width: 200px;
+    height: 40px;
+    font-size: 100%;
+    margin-left: 0.45in;
+    
+}
+
+#enterButton:hover {
+    color: rgb(78, 78, 255);
+    border-color: rgb(78, 78, 255);
+}
+
+.accountButton   {
+    background-color: black;
+    border-color: white;
+    border-radius: 0.2in;
+    color: white;
+    width: 150px;
+    height: 40px;
+    font-size: 75%;
+    margin-left: 0.45in;
+    margin-left: 0in;
+    
+}
+
+.accountButton:hover {
+    color: rgb(78, 78, 255);
+    border-color: rgb(78, 78, 255);
+}
+
+nav ol{height:300px; width:100%;}
+nav ol{overflow:hidden;  overflow-y:scroll;}
+nav ol li {border-radius: 0;}
+
+.input3    {
+    width: 300px;
+    height: 30px;
+    font-size: 100%;
+    border-color: black;
+    border-radius: 0.0in;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+.input3:hover    {
+    color: rgb(78, 78, 255);
+    border-color: rgb(78, 78, 255);
+}
+
+.inputFilter    {
+    width: 200px;
+    height: 40px;
+    font-size: 100%;
+    border-color: white;
+    border-radius: 0.2in;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+.inputFilter:hover    {
+    color: rgb(78, 78, 255);
+    border-color: rgb(78, 78, 255);
+}
+
+.filterList {
+    margin-left: 0.65in;
+}

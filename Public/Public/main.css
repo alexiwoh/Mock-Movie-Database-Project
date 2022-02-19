@@ -1,0 +1,160 @@
+html    {
+    background-color: #000000;
+}
+
+#top {
+    
+    position: fixed;
+    float:left;
+    
+}
+
+#headerL  {
+    
+    float: left;
+    color: white;
+    width:25%;
+}
+
+#headerInner  {
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    position: fixed;
+    
+    margin-left: 28.62%;
+    margin-top: 0.2in;
+    float:right;
+    width:70%;
+    
+
+}
+
+
+
+h1  {
+    width: 400px;
+    height: 40px;
+}
+
+.input1    {
+    width: 400px;
+    height: 40px;
+    font-size: 125%;
+    border-color: white;
+    border-radius: 0.2in;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+.input1:hover    {
+    color: rgb(78, 78, 255);
+    border-color: rgb(78, 78, 255);
+}
+
+.input2    {
+    width: 300px;
+    height: 30px;
+    font-size: 100%;
+    border-color: white;
+    border-radius: 0.2in;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+.input2:hover    {
+    color: rgb(78, 78, 255);
+    border-color: rgb(78, 78, 255);
+}
+
+#searchButton   {
+    background-color: black;
+    border-color: white;
+    color: white;
+    width: 100px;
+    height: 40px;
+    font-size: 125%;
+    
+}
+
+#searchButton:hover {
+    color: rgb(78, 78, 255);
+    border-color: rgb(78, 78, 255);
+}
+
+#col1    {
+    
+    float: right;
+    color: white;
+    width: 30%;
+    
+    height: 100%;
+    position: fixed;
+    margin-top: 0.65in;
+    
+    
+}
+
+#col1in {
+    margin-left: 0.2in;
+    margin-bottom: 3in;
+    
+    
+    height: 100%;
+}
+
+#col2    {
+    margin-top: 0.65in;
+    position: relative;
+    float: right;
+    width: 70%;
+    color: white;
+    
+    
+    
+}
+
+.navOptions     {
+    font-size: larger;
+    text-align: left;
+    margin-left: 0.25in;
+    
+}
+
+.navOptions:hover {
+    color: rgb(78, 78, 255);
+}
+
+#loginOption    {
+    font-size: x-large;
+}
+
+#copyrightText  {
+    font-size: small;
+    color: white;
+}
+
+#recommended    {
+    margin-top: 0.05in;
+}
+
+#scrollList {
+    width: 45%;
+}
+
+#info {
+    width: 100%;
+}
+
+.infoSetBox {
+    border-radius: 0.2in;
+    border-color: white;
+}
+
+.infoSetBox:hover   {
+    color: rgb(78, 78, 255);
+}

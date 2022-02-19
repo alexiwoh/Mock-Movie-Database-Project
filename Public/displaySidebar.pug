@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+  body
+    #col1.col1
+      #col1in.col1in
+        h1 Browse
+        a(href='/Content/movies.html')
+          h2#movieOption.navOptions Movies
+        a(href='/Content/people.html')
+          h2#personOption.navOptions People
+        a(href='/Content/accounts.html')
+          h2#accountOption.navOptions Accounts
+        h1 User
+        div
+          a(href='/main.html')
+            h2#userOption1.navOptions Main Page
+          a(href='/Content/account.html')
+            h2#userOption5.navOptions My Account
+          a(href='/Content/login.html')
+            h2#userOption4.navOptions Login
+          a(href='/Content/login.html#noAccountMessage')
+            h2#userOption3.navOptions Create Account
+          a(href='/Content/login.html#recoverMessage')
+            h2#userOption2.navOptions
+              | Forgot Password?
+              h2  

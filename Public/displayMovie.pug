@@ -1,0 +1,110 @@
+doctype html
+html(lang='en')
+  head
+    title Movie Page for #{data.Name}
+    link(rel="stylesheet" href="/main.css")
+    link(rel="stylesheet" href="/Content/account.css")
+    link(rel="stylesheet" href="/Content/browse.css")
+  body
+    div(id="col2" class="col2")
+      h1(class="headers") #{data.Name}
+      div
+        p(style="color:black") #{data.ID}
+      #elemInfo
+        img#infoPic.col2L(src='/Content/stockMovieImage.jpg' alt='Movie Picture')
+        #info
+          h2 Name: 
+          p #{data.Name}
+
+          - let genres = data.Genres.split(', ');
+          h2 Genres:
+          
+          each genre in genres
+            br
+            - let lin = `/movies?genre=${genre}`
+            a(href=lin) #{genre}
+          else
+              p None
+
+          h2 Year: 
+          p
+            = " " + data.Year
+          h2 Runtime: 
+          p
+            = " " + data.Runtime
+          h2 Plot: 
+          p
+            = " " + data.Plot
+          h2 Directors:
+          
+          each person in data.Directors.split(', ')
+            br
+            - let lin = `/people/${data.People[person]}`
+            a(href=lin) #{"  "+person}
+          else
+              p None
+
+          h2 Cast:
+          
+          each person in data.Cast.split(', ')
+            br
+            - let lin = `/people/${data.People[person]}`
+            a(href=lin) #{"  "+person}
+          else
+              p None
+
+          h2 Writers:
+          p
+            each person in data.Writers.split(', ')
+             
+              - let lin = `/people/${data.People[person]}`
+              a(href=lin) #{"  "+person}
+            else
+              p None
+
+          h2 Average Score:
+          p
+            = " " + data.ratingScore
+          h2 Reviews:
+          p
+            = "------------------------------"
+          p
+            each review in data.Ratings
+              
+              div(class="infoSetBox" style="border-color:white")
+                p 
+                  = "Source:\t"+review.Source
+                p
+                  = "Rating:\t"+review.Value
+              p
+                = "------------------------------"
+            else
+              p None
+
+    #col1.col1
+      #col1in.col1in
+        h1 Browse
+        a(href='/Content/movies.html')
+          h2#movieOption.navOptions Movies
+        a(href='/Content/people.html')
+          h2#personOption.navOptions People
+        a(href='/Content/accounts.html')
+          h2#accountOption.navOptions Accounts
+        h1 User
+        div
+          a(href='/main.html')
+            h2#userOption1.navOptions Main Page
+          a(href='/Content/account.html')
+            h2#userOption5.navOptions My Account
+          a(href='/Content/login.html')
+            h2#userOption4.navOptions Login
+          a(href='/Content/login.html#noAccountMessage')
+            h2#userOption3.navOptions Create Account
+          a(href='/Content/login.html#recoverMessage')
+            h2#userOption2.navOptions
+              | Forgot Password?
+              h2
+              
+  script(src="/main.js")
+  script(src="/forms.js")
+    
